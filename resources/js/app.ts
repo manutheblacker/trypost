@@ -11,6 +11,11 @@ import { initializeTheme } from './composables/useAppearance';
 import dayjs from './dayjs';
 import posthog from './posthog';
 import type { Auth } from './types';
+import { configureEcho } from '@laravel/echo-vue';
+
+configureEcho({
+    broadcaster: 'reverb',
+});
 
 configureEcho({
     broadcaster: 'reverb',

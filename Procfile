@@ -3,3 +3,4 @@ web: php artisan serve --port=8000
 queue: php artisan queue:work --sleep=3 --tries=3
 vite: npm run dev
 mailer: mailpit
+reverb: php artisan reverb:start --host=127.0.0.1 --port=9000
